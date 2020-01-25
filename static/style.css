@@ -1,30 +1,31 @@
-@font-face {
-    font-family: 'Rubik';
-    src: url('fonts/rubik-light-webfont.woff2') format('woff2'),
-         url('fonts/rubik-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.theme-sveltejs {
+  --back: #ffffff;
+  --back-light: #f6fafd;
+  --back-api: #eff8ff;
+  --prime: #ff3e00;
+  --second: #676778;
+  --flash: #40b3ff;
+  --heading: var(--second);
+  --text: #444;
+  --sidebar-text: rgba(255, 255, 255, .75);
+  --border-w: .3rem;
+  --border-r: .4rem;
 }
 
-@font-face {
-    font-family: 'Rubik';
-    src: url('fonts/rubik-medium-webfont.woff2') format('woff2'),
-         url('fonts/rubik-medium-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-
-}
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #202020;
+  font-family: 'Overpass'; /*, sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+  color: var(--text);
+  background-color: var(--back);
 }
 
 a, a:visited {
-  color: #337ab7;
+  color: var(--prime);
+  text-decoration: underline;
 }
+
 p {
   font-size: 18px;
   color: #383838;
@@ -34,7 +35,7 @@ p {
 h2 {
   font-size: 36px;
   font-weight: 400;
-  color: #337ab7;
+  color: var(--heading);
 }
 
 a:hover {
@@ -54,6 +55,14 @@ body * {
   width: 100%;
   margin-right: auto;
   margin-left: auto
+}
+
+.wrapper > * {
+  margin-top: 30px;
+}
+
+.wrapper > * > h2 {
+  margin-bottom: 15px;
 }
 
 @media (min-width:576px) {
@@ -83,10 +92,11 @@ body * {
 
 .logo {
   font-size: 36px;
-  color: #337ab7;
+  color: var(--heading);
   text-decoration: none;
   position: relative;
-  padding-left: 57px;
+  padding-left: 63px;
+  margin-left: -57px;
   margin-top: 85px;
   display: inline-block;
 }
@@ -114,7 +124,7 @@ body * {
 }
 .menu {
   font-size: 18px;
-  color: #202020;
+  color: var(--text);
   margin-bottom: 12px;
   margin-top: 85px
 }
@@ -169,7 +179,7 @@ body * {
 .banner::after {
   content: "";
   height: 576px;
-  background-image: url(../img/sandbox-oclif2.png);
+  background-image: url(../img/svelte-tutorial.png);
   background-size: cover;
   opacity: 0.6;
   top: 0;
@@ -178,19 +188,28 @@ body * {
   right: 0;
   position: absolute;
   z-index: -1;   
-  background-position-y: -60px;
+  background-position-y: -5px;
 }
 
 .banner h2 {
   /* color: #000; */
   font-weight: 500
 }
+
+.banner .prime {
+  background: var(--prime);
+}
+
+.banner .flash {
+  background: var(--flash);
+}
+
 .banner p {
   font-size: 18px;
-  background: rgba(0,0,0,0.81);
   line-height: 24px;
   padding: 1em 3ex;
   color: #fff;
+  border-radius: var(--border-r);
 }
 .banner > .buy-button  {
   left: 50%;
@@ -200,7 +219,7 @@ body * {
 
 .buy-button {
   display: inline-block;
-  background: #337ab7;
+  background: var(--heading);
   font-size: 18px;
   color: #FFFFFF;
   text-align: center;
@@ -223,13 +242,13 @@ body * {
   margin-top: 36px;
   /* background-image: url('img/photo.png'); */
   height: 464px;
-  background-image: url('./pavlik_conference.webp');
+  background-image: url('./alex-scene.jpg');
   background-size: cover;
   /* height: 360px; */
+  border-radius: var(--border-r);
 }
 .instructors {
   list-style: none;
-  margin: 72px 0 48px;
   padding: 0;
 }
 .instructors img  {
@@ -237,9 +256,7 @@ body * {
   max-width: 170px;
   border-radius: 85px;
 }
-.instructors h2 {
-  margin-top: 0;
-}
+
 .instructors > li > div{
   margin-bottom: 2em;
 }
@@ -247,15 +264,12 @@ body * {
   font-weight: 400;
   font-size: 24px;
   margin-top: 0;
-  margin-bottom: 1em;
 }
 
 .plan {
   font-size: 18px;
 }
-.plan h2 {
-  margin-bottom: 12px;
-}
+
 .plan ul {
   margin: 0;
   padding: 0;
@@ -306,14 +320,7 @@ body * {
 }
 .requirements {
   padding: 0;
-  margin: 0;
   font-size: 18px;
-}
-.sponsors {
-}
-
-.sponsors img {
-  height: 5em;
 }
 
 .blinking-cursor {
@@ -331,7 +338,7 @@ body * {
     color: transparent;
   }
   50% {
-    color: #337ab7;
+    color: var(--heading);
   }
 }
 
@@ -340,7 +347,7 @@ body * {
     color: transparent;
   }
   50% {
-    color: #337ab7;
+    color: var(--heading);
   }
 }
 
@@ -349,7 +356,7 @@ body * {
     color: transparent;
   }
   50% {
-    color: #337ab7;
+    color: var(--heading);
   }
 }
 
@@ -358,7 +365,7 @@ body * {
     color: transparent;
   }
   50% {
-    color: #337ab7;
+    color: var(--heading);
   }
 }
 
@@ -367,7 +374,7 @@ body * {
     color: transparent;
   }
   50% {
-    color: #337ab7;
+    color: var(--heading);
   }
 }
 

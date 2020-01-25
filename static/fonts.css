@@ -1,16 +1,31 @@
 @font-face {
-    font-family: 'Rubik';
-    src: url('rubik-light-webfont.woff2') format('woff2'),
-         url('rubik-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Overpass';
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local('Overpass Light '),
+		local('Overpass-Light'),
+		url('./fonts/overpass-latin-300.woff2') format('woff2');
 }
 
+/* overpass-600normal - latin */
 @font-face {
-    font-family: 'Rubik';
-    src: url('rubik-medium-webfont.woff2') format('woff2'),
-         url('rubik-medium-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
+	font-family: 'Overpass';
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local('Overpass Bold '),
+		local('Overpass-Bold'),
+		url('./fonts/overpass-latin-600.woff2') format('woff2');
+}
 
+/* fira-mono-400normal - latin */
+@font-face {
+	font-family: 'Fira Mono';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Fira Mono Regular '),
+		local('Fira Mono-Regular'),
+		url('./fonts/fira-mono-latin-400.woff2') format('woff2');
 }
