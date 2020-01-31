@@ -63,6 +63,7 @@ body * {
 
 .wrapper > * > h2 {
   margin-bottom: 15px;
+  margin-top: 50px;
 }
 
 @media (min-width:576px) {
@@ -242,7 +243,7 @@ body * {
   margin-top: 36px;
   /* background-image: url('img/photo.png'); */
   height: 464px;
-  background-image: url('./alex-scene.jpg');
+  background-image: url('../img/workshop-pic.jpg');
   background-size: cover;
   /* height: 360px; */
   border-radius: var(--border-r);
@@ -384,4 +385,13 @@ body * {
 
 .ps {
   margin-bottom: 100px;
+}
+
+.footer-text {
+  padding-bottom: 40px; justify-content: center;
+}
+
+.text-footer-muted {
+  color: #ccc;
+  font-size: 12px;
 }
