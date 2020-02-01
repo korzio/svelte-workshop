@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066) -->
 <html lang="en" class="gr__workshops_jsplanet_info">
 
 <head>
@@ -7,9 +6,8 @@
     <script async="" src="./static/js"></script>
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/favicon.ico">
-    <title>Build Full Featured Frontend App with Svelte</title>
-    <!-- modal -->
-    <!-- Latest compiled and minified CSS -->
+    <title>Build frontend app with Svelte - workshop on PWA, SvelteJS</title>
+    
     <link rel="stylesheet" href="./static/bootstrap-v3.css">
     <script src="./static/jquery.min.js"></script>
     <script src="./static/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -28,7 +26,7 @@
                         <a class="logo" href="/">
                             <img class="main-svg" src="https://svelte.dev/svelte-logo.svg"> 
                             Build Full Featured Frontend App
-                            <br> with Svelte
+                            <br> with Svelte & Sapper
                             <small>
                                 workshop
                             </small>
@@ -40,13 +38,10 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#whatwillbe">How it goes</a>
                         </li>
                         <li>
-                            <a href="#whatwillbe">How it Goes</a>
-                        </li>
-                        <li>
-                            <a href="#plan">Agenda</a>
+                            <a href="#plan">Workshop agenda</a>
                         </li>
                         <li>
                             <a href="#requirements">Prerequisites</a>
@@ -63,11 +58,12 @@
         <section class="wrapper">
             <div class="row">
                 <div class="col-md-7">
-                    <h2 id="about">About</h2>
+                    <!-- <h2 id="about">About</h2> -->
+                    <br><br>
                     <p class="prime">
                         Svelte is a new prominent JavaScript framework exposing <i>“write less do more”</i> philosophy. 
-                        Attending a workshop is the fastest way to acquire a body of knowledge about building modern web apps.
-                        During this workshop you will get proficiency as a Svelte developer
+                        Attending a workshop is the fastest way to acquire a body of knowledge about building modern web apps.<br>
+                        During this workshop you will get a full proficiency in Svelte for developing frontend apps.
                         <paste>
                         </paste>
                     </p>
@@ -80,9 +76,9 @@
                 <div class="col-md-6 col-sm-12">
                     <h2 id="goal"></h2>
                     <p class="flash">
-                        You will have a project in your Github repository, ready to use and evolve.
-                        You will know how it is designed, understand technologies and best practices it is following.
-                        Workshop can be adjusted from 3 to 6 hours total time
+                        The end result is a project repository, built ground up.
+                        You will master all the key concepts and techniques to build apps with Svelte and Sapper. <br>
+                        Including state management and testing Svelte apps.
                     </p>
                 </div>
             </div>
@@ -92,45 +88,51 @@
         <div class="row">
             <div class="col-md-5 col-sm-12">
                 <h2 id="whatwillbe">How it Goes</h2>
-                <p>We will be building an app that mimics the famous Q&A website <i>stackoverflow.com</i>.
-
-                We start with theory, overview key concepts of <strong>Svelte</strong> framework, tools and techniques used in the workshop. 
-                We are going to setup <i>npm</i> and editor of choice for all participants.
-                By progressively breaking down the app into components, we will ensure the code is reusable.
+                <p>During a workshop we will be building an app that mimics the famous Q&A website <i>stackoverflow.com</i>.
+                </p>
+                <p>
+                We'll start with local setup, tools and techniques used in the workshop. 
+                Then goes an overview key concepts of <strong>Svelte</strong> and we'll kick off a basic app using a generator.
+            </p>
+            <p>
+                Throughout the workshop by progressively breaking down the app into components, we will ensure the code is reusable.
                 Adding routes and state management​ will complete the app functionality.
-                We'll connect it to a real running backend, test with <i>Cypress​</i>, and optimise the build.
+            </p>
+            <p>
+                We'll connect the app to a containerised backend (Nodejs + mongoDB), test with <i>Cypress​</i>, and later optimise the production build. </p>
+                <p>
                 Our goals are to learn awesome technologies, practice modern techniques, and of course, make your Svelte app production ready!</p>
             </div>
             <div class="col-md-7 col-sm-12">
-                <div class="photo">
+                <div class="photo" title="Build frontend app with Svelte">
                 </div>
             </div>
         </div>
         <div class="plan">
-            <h2 id="plan">Agenda</h2>
+            <h2 id="plan">Workshop agenda</h2>
             <p>Build Full Featured Frontend App with Svelte</p>
 
             <ul>
                 <li>
-                    Introduction & Local Configuration 💡
+                    Introduction & local development configuration 💡
                 </li>
                 <li>
                     Why Svelte​? 📖
                 </li>
                 <li>
-                    Setup App & Create Components 👋
+                    Setup the app & create basic components 👋
                 </li>
                 <li>
-                    Make App Modular with Routing & First Class UX 🛠️
+                    Make your app modular with routing & first class UX 🛠️
                 </li>
                 <li>
-                    Add Real Data & State Management​ ⭐
+                    Connect to backend and add real data & state management​ ⭐
                 </li>
                 <li>
-                    Test and Prepare App​ for Production 🔒
+                    Test the app and prepare app​ for production 🔒
                 </li>
                 <li>
-                    Final 🎉
+                    Final and Q&A 🎉
                 </li>
             </ul>
         </div>
@@ -139,16 +141,14 @@
             <h2 id="requirements">Prerequisites</h2>
             <ol>
                 <li>You’ll need to have a laptop with you. Windows, Linux or Mac doesn’t matter. Ideally, you should feel comfortable
-                    using this computer for daily tasks. Don't forget to take a charger.
+                    using this computer for daily dev tasks. Don't forget to take a charger;
                 </li>
-                <li>Installed Software –
-                    <a href="https://www.npmjs.com/" target="_blank">npm</a> (obviously 😀),
-                    <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git</a>
-                    (account on
-                    <a href="https://github.com/" target="_blank">Github</a>),
-                    <a href="https://code.visualstudio.com/download" target="_blank">VSCode </a>(preferable).
+                <li>Installed software –
+                    <a href="https://www.npmjs.com/" target="_blank">npm</a> ,
+                    <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">git</a>,
+                    <a href="https://code.visualstudio.com/download" target="_blank">VSCode </a> or IDE of choice;
                 </li>
-                <li>Experience with Frontend, enthusiasm and interest might help!</li>
+                <li>Junior/medior experience with frontend </li>
             </ol>
         </div>
 
@@ -159,12 +159,10 @@
                     <img src="./static/mikhail.jpg" alt="Mikhail Photo">
                 </div>
                 <div class="col-md-6">
-                    <h3>Mikhail Kuznetcov</h3>
+                    <h3>Mikhail Kuznetcov <a style="font-size: 16px;" href="https://twitter.com/legkoletat">@legkoletat</a></h3>
+                   
                     <p>
-                        <a href="https://www.meetup.com/Amsterdam-SvelteJS/">Svelte meetup organiser</a>, <a href="https://github.com/shershen08/conf-talks">Conference Speaker</a>, Software Engineer 
-                        with huge experience in backend, and variety of modern JavaScript frameworks - 
-                        <a href="https://github.com/shershen08/vue-masonry" title="Vue.js directive for masonry blocks layouting" target="_blank">Vue</a>, 
-                        React, Svelte
+                        Chapter lead at ING Bank. <a href="https://www.meetup.com/Amsterdam-SvelteJS/">Amsterdam Svelte meetup organiser</a>, <a href="https://github.com/shershen08/conf-talks">conference speaker</a>, fullstack developer with experience in variety of  JavaScript frameworks.
                         <br>
                     </p>
                 </div>
@@ -174,7 +172,7 @@
                     <img src="./static/alex.jpg" alt="Alex Photo">
                 </div>
                 <div class="col-md-6">
-                    <h3>Alex Korzhikov</h3>
+                    <h3>Alex Korzhikov <a style="font-size: 16px;" href="https://twitter.com/AlexKorzhikov">@AlexKorzhikov</a></h3>
                     <p>
                         Software engineer, team lead,
                         <a href="https://github.com/korzio/modern_javascript_frameworks" title="Modern JavaScript Frameworks Course" target="_blank">mentor</a>, and <a href="https://medium.com/@korzio">author of technical materials</a> in
@@ -191,11 +189,15 @@
                 </div>
             </li>
         </ul>
-        <!-- <div class="wrapper">
-            <div class="row" style="padding-bottom: 40px; justify-content: center;">
-                <a href="/workshop" class="buy-button">Start the workshop</a>
+        <div class="wrapper">
+            <div class="footer-text">
+          
+              <h3>  Feel free ot ping us on twitter or via email <a href="mailto: sveltejsnews@gmail.com ">sveltejsnews@gmail.com </a></h3>
+                <br>
+                <p class="text-footer-muted">2020 | Photo by NESA by Makers on Unsplash</p>
+                
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
 
